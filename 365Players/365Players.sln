@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "365Players", "365Players\365Players.csproj", "{AF1585AA-A33B-4989-8757-EA1BC99A6286}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannersTests", "ScannersTests\ScannersTests.csproj", "{58E05C0F-E706-4D37-89D1-E41AF0231DDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF1585AA-A33B-4989-8757-EA1BC99A6286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF1585AA-A33B-4989-8757-EA1BC99A6286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF1585AA-A33B-4989-8757-EA1BC99A6286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF1585AA-A33B-4989-8757-EA1BC99A6286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E05C0F-E706-4D37-89D1-E41AF0231DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E05C0F-E706-4D37-89D1-E41AF0231DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E05C0F-E706-4D37-89D1-E41AF0231DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E05C0F-E706-4D37-89D1-E41AF0231DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7742F4C7-80EA-454F-8E64-E5C10ED8665E}
+	EndGlobalSection
+EndGlobal

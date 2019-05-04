@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF1585AA-A33B-4989-8757-EA1BC99A6286}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>_365Players</RootNamespace>
+    <AssemblyName>365Players</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=4.5.24.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Diagnostic\AsyncUpdatesQueue.cs" />
+    <Compile Include="Diagnostic\OperationStatistics.cs" />
+    <Compile Include="Enums\ScanType.cs" />
+    <Compile Include="Enums\SoccerEnums.cs" />
+    <Compile Include="Fetcher\BypassCacheHttpRequestHandler.cs" />
+    <Compile Include="Fetcher\DataFetcher.cs" />
+    <Compile Include="Fetcher\DomainRequestAssistant.cs" />
+    <Compile Include="Fetcher\FetchResult.cs" />
+    <Compile Include="Fetcher\IDataFetcher.cs" />
+    <Compile Include="Parsers\ParseFunctions.cs" />
+    <Compile Include="Parsers\SoccerWayInnerPageParser.cs" />
+    <Compile Include="Parsers\SoccerWayOuterPageParser.cs" />
+    <Compile Include="Scanners\Models\CompetitionData.cs" />
+    <Compile Include="Scanners\Models\CompetitorData.cs" />
+    <Compile Include="Scanners\Models\LocalGameEvent.cs" />
+    <Compile Include="Scanners\Models\PlayerData.cs" />
+    <Compile Include="Scanners\Models\ScanContext.cs" />
+    <Compile Include="Scanners\Models\ScanMetaData.cs" />
+    <Compile Include="Scanners\Scanner.cs" />
+    <Compile Include="Scanners\SoccerWayScanner.cs" />
+    <Compile Include="Services\HtmlNodeGetter.cs" />
+    <Compile Include="Updates\CAthleteInjuryUpdate.cs" />
+    <Compile Include="Updates\CAthleteStatisticsUpdate.cs" />
+    <Compile Include="Updates\CAthleteSuspensionUpdate.cs" />
+    <Compile Include="Updates\CGameUpdate.cs" />
+    <Compile Include="Updates\CPlayerIndividualStat.cs" />
+    <Compile Include="Updates\CPlayerUpdate.cs" />
+    <Compile Include="Enums\PlayerEnums.cs" />
+    <Compile Include="ScannerHostServiceP.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Updates\CPrimitiveCompetitorInGame.cs" />
+    <Compile Include="Updates\CSoccerGameUpdate.cs" />
+    <Compile Include="Updates\ParsableValue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#212121">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:id="@+id/homePageButton"
+                        android:layout_width="87dp"
+                        android:layout_height="87dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/home" />
+
+                    <ImageButton
+                        android:id="@+id/SimpleSearch"
+                        android:layout_width="87dp"
+                        android:layout_height="87dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/searchhclicked" />
+
+                    <ImageButton
+                        android:id="@+id/advancedSearchButtonb"
+                        android:layout_width="87dp"
+                        android:layout_height="87dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/advansearchh" />
+
+                    <ImageButton
+                        android:id="@+id/settingsButton"
+                        android:layout_width="87dp"
+                        android:layout_height="87dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/setting" />
+
+                    <ImageButton
+                        android:id="@+id/exitButton"
+                        android:layout_width="87dp"
+                        android:layout_height="87dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/exi" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#FFFFFF"/>
+
+
+        <ListView
+            android:id="@+id/list_view"
+
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_height="wrap_content"></ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

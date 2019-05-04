@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#212121"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:layout_marginBottom="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:id="@+id/homePageButton"
+                        android:layout_width="87dp"
+                        android:layout_height="87dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.17"
+                        android:background="@drawable/home" />
+
+                    <ImageButton
+                        android:id="@+id/SimpleSearch"
+                        android:layout_width="87dp"
+                        android:layout_height="87dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/searchh" />
+
+                    <ImageButton
+                        android:id="@+id/advancedSearchButton"
+                        android:layout_width="87dp"
+                        android:layout_height="87dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/advansearchh" />
+
+                    <ImageButton
+                        android:id="@+id/settingsButton"
+                        android:layout_width="87dp"
+                        android:layout_height="87dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/settingclicked" />
+
+                    <ImageButton
+                        android:id="@+id/exitButton"
+                        android:layout_width="87dp"
+                        android:layout_height="87dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/exi" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/whiteee" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/player_name"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="casual"
+                    android:gravity="center_vertical"
+                    android:paddingRight="25dp"
+                    android:text="Settings:"
+
+                    android:textAlignment="center"
+                    android:textColor="#90A4AE"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+
+                        android:id="@+id/textView14"
+                        android:layout_width="262dp"
+                        android:layout_height="43dp"
+                        android:gravity="center_vertical"
+                        android:text="notifications for goals:"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:fontFamily="casual"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="43dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="2.03"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:gravity="center_vertical"
+                        android:layout_width="82dp"
+                        android:layout_height="43dp"
+                        android:textColor="@color/colorWhite"
+                        android:textOff="off"
+                        android:textOn="on" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="262dp"
+                        android:layout_height="43dp"
+                        android:gravity="center_vertical"
+                        android:text="notifications for assists:"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:fontFamily="casual"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="43dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="2.03"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/switch2"
+                        android:gravity="center_vertical"
+                        android:layout_width="82dp"
+                        android:layout_height="43dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="262dp"
+                        android:layout_height="43dp"
+                        android:gravity="center_vertical"
+                        android:text="notifications for clean sheet:"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:fontFamily="casual"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="43dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="2.03"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/switch3"
+                        android:gravity="center_vertical"
+                        android:layout_width="82dp"
+                        android:layout_height="43dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="303dp"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center_vertical"
+                        android:text="notifications for in game:"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:fontFamily="casual"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="43dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="2.03"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/switch4"
+                        android:gravity="center_vertical"
+                        android:layout_width="82dp"
+                        android:layout_height="43dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+
+                        android:id="@+id/textView18"
+                        android:layout_width="310dp"
+                        android:gravity="center_vertical"
+
+                        android:layout_height="match_parent"
+                        android:text="notifications for red cards:"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:fontFamily="casual"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="43dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="2.03"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/switch5"
+                        android:gravity="center_vertical"
+                        android:layout_width="82dp"
+                        android:layout_height="43dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="317dp"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center_vertical"
+                        android:text="notifications for yellow cards:"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:fontFamily="casual"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="43dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="2.03"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/switch6"
+                        android:gravity="center_vertical"
+                        android:layout_width="82dp"
+                        android:layout_height="43dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="365dp"
+                android:layout_height="106dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="323dp"
+                    android:layout_height="129dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="130dp"
+
+                        android:layout_height="63dp"
+                        android:gravity="center"
+                        android:text="submit"
+                        android:fontFamily="casual"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
